@@ -1,0 +1,398 @@
+/* line 1, ../compass/sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 5, ../compass/sass/style.scss */
+*:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 13, ../compass/sass/style.scss */
+.clearfix:before {
+  display: table;
+  content: " ";
+}
+/* line 17, ../compass/sass/style.scss */
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* line 23, ../compass/sass/style.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  color: #1A1A1A;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  list-style-type: none;
+}
+
+/* line 33, ../compass/sass/style.scss */
+a {
+  color: #888;
+  text-decoration: none;
+}
+/* line 36, ../compass/sass/style.scss */
+a:hover, a:active {
+  color: #333;
+}
+
+/* line 40, ../compass/sass/style.scss */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* line 44, ../compass/sass/style.scss */
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 160%;
+  color: #3f3f3f;
+}
+
+/* ---------------------------------------------------- NAVIGATION ------------------ */
+/* line 50, ../compass/sass/style.scss */
+#navigation {
+  position: fixed;
+  z-index: 998;
+  margin-top: -50px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #e9e9e9;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 62, ../compass/sass/style.scss */
+#navigation a {
+  display: inline-block;
+  padding: 4px 0px 0px 0px;
+  width: 183px;
+  height: 20px;
+  border-right: 1px solid #5C5C5C;
+}
+/* line 68, ../compass/sass/style.scss */
+#navigation a:hover {
+  background-color: rgba(167, 213, 24, 0.9);
+}
+/* line 71, ../compass/sass/style.scss */
+#navigation a.first {
+  border-left: 1px solid #5C5C5C;
+}
+
+/********* RESPONSIVE GRID **********/
+/* line 77, ../compass/sass/style.scss */
+.grid {
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 5px 20px 30px 20px;
+  max-width: 1300px;
+  text-align: center;
+}
+/* line 83, ../compass/sass/style.scss */
+.grid li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  width: 440px;
+  text-align: left;
+}
+/* line 91, ../compass/sass/style.scss */
+.grid figure {
+  position: relative;
+  margin: 0;
+}
+/* line 94, ../compass/sass/style.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+}
+/* line 100, ../compass/sass/style.scss */
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: rgba(167, 213, 24, 0.9);
+  color: #fff;
+}
+/* line 107, ../compass/sass/style.scss */
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+/* line 112, ../compass/sass/style.scss */
+.grid figcaption a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #2c3f52;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 122, ../compass/sass/style.scss */
+.spacer {
+  position: fixed;
+  z-index: 900;
+  margin-top: -160px;
+  width: 100%;
+  height: 130px;
+  background-color: #f6f6f6;
+}
+
+/* ---------------------------------------------------- FUNSTUFF ------------------ */
+/* line 131, ../compass/sass/style.scss */
+.logo {
+  position: fixed;
+  z-index: 999;
+  margin-top: -140px;
+  margin-left: 48%;
+  padding: 0;
+  max-width: 60px;
+  max-height: 10px;
+}
+
+/* line 140, ../compass/sass/style.scss */
+#myText {
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+/*********** LOGO ANIMATION ***********/
+/* line 149, ../compass/sass/style.scss */
+.layer:nth-child(1) {
+  opacity: 0.90;
+}
+/* line 152, ../compass/sass/style.scss */
+.layer:nth-child(2) {
+  opacity: 0.70;
+}
+/* line 155, ../compass/sass/style.scss */
+.layer:nth-child(3) {
+  opacity: 0.60;
+}
+/* line 158, ../compass/sass/style.scss */
+.layer:nth-child(4) {
+  opacity: 0.50;
+}
+/* line 161, ../compass/sass/style.scss */
+.layer:nth-child(5) {
+  opacity: 0.40;
+}
+
+/********* CAPTION STUFF **********/
+/* GALLERY 1 */
+/* line 167, ../compass/sass/style.scss */
+.galleryStyle figure {
+  overflow: hidden;
+}
+/* line 169, ../compass/sass/style.scss */
+.galleryStyle figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+/* line 175, ../compass/sass/style.scss */
+.no-touch .galleryStyle figure:hover img {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+/* line 182, ../compass/sass/style.scss */
+.galleryStyle figure.cs-hover img {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+/* line 188, ../compass/sass/style.scss */
+.galleryStyle figcaption {
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 203, ../compass/sass/style.scss */
+.no-touch .galleryStyle figure:hover figcaption {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 214, ../compass/sass/style.scss */
+.galleryStyle figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 224, ../compass/sass/style.scss */
+.galleryStyle figcaption a {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* PROJECT SITE */
+/* line 233, ../compass/sass/style.scss */
+.projectTitle video {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 65%;
+}
+
+/* line 239, ../compass/sass/style.scss */
+.textSet {
+  width: 64%;
+  margin: 0 auto;
+}
+/* line 242, ../compass/sass/style.scss */
+.textSet p {
+  text-align: justify;
+}
+
+/* line 246, ../compass/sass/style.scss */
+.englishText {
+  display: none;
+}
+
+/* line 249, ../compass/sass/style.scss */
+#language {
+  position: fixed;
+  font-size: 80%;
+  color: #777777;
+}
+/* line 253, ../compass/sass/style.scss */
+#language li {
+  display: inline-block;
+}
+/* line 256, ../compass/sass/style.scss */
+#language:hover {
+  cursor: pointer;
+}
+
+/*max-width: 31.5em*/
+@media screen and (min-width: 1500px) {
+  /* line 263, ../compass/sass/style.scss */
+  .grid {
+    padding: 10px 10px 100px 10px;
+  }
+  /* line 265, ../compass/sass/style.scss */
+  .grid li {
+    width: 100%;
+    width: 540px;
+  }
+}
+@media screen and (max-width: 549px) {
+  /* line 272, ../compass/sass/style.scss */
+  .grid {
+    padding: 10px 10px 100px 10px;
+  }
+  /* line 274, ../compass/sass/style.scss */
+  .grid li {
+    min-width: 300px;
+    width: 100%;
+  }
+
+  /* line 279, ../compass/sass/style.scss */
+  #navigation {
+    position: absolute;
+    top: 90px;
+    margin: 0 auto;
+    min-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-weight: 10;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 289, ../compass/sass/style.scss */
+  #navigation a {
+    display: inline-block;
+    padding: 8px 0px 0px 0px;
+    width: 100px;
+    height: 33px;
+    border-right: 1px solid #5C5C5C;
+  }
+}
+/*iphone 4*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 300, ../compass/sass/style.scss */
+  .grid {
+    padding: 10px 10px 100px 10px;
+  }
+  /* line 302, ../compass/sass/style.scss */
+  .grid li {
+    min-width: 400px;
+    width: 100%;
+  }
+
+  /* line 307, ../compass/sass/style.scss */
+  #navigation {
+    position: absolute;
+    top: 90px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-weight: 10;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 316, ../compass/sass/style.scss */
+  #navigation a {
+    display: inline-block;
+    padding: 8px 0px 0px 0px;
+    width: 200px;
+    height: 33px;
+    border-right: 1px solid #5C5C5C;
+  }
+
+  /* line 324, ../compass/sass/style.scss */
+  #language {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 329, ../compass/sass/style.scss */
+  .codrops-icon span {
+    display: none;
+  }
+}

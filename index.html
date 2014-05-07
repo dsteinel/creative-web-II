@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dimitri Steinel</title>
+        <meta name="description" content="Dimitri Steinel, Berlin based interaction artist  " />
+        <meta name="keywords" content="Interaction Design, Interactive, Installation, web design" />
+        <meta name="author" content="Dimitri Steinel" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=1400">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta property="ga:property_id" content="UA-39461765-1"/>
+        <meta property="og:title" content="Dimitri Steinel | Interaction Design" />
+        <meta property="og:site_name" content="Dimitri Steinel" />
+        <meta property="og:description" content="This is my website - enjoy it!" />
+        <meta property="og:url" content="http://dsteinel.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_us" />
+        <link rel="shortcut icon" href="img/logo/favicon/favicon.png" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+      </script>
+    </head>
+    <body>
+<div id="container">
+	<div id="navigation">
+		<a class="first" href="index.html">GALLERY</a><a href="about.html">ABOUT</a><a href="mailto:dimitri.steinel@gmail.com">CONTACT</a>
+	</div>
+	<div class="spacer"></div>
+	<ul id="logo" class="logo">
+		<li class="layer" data-depth="2.00"><img src="img/logo/V1/layer1.png"></li>
+		<li class="layer" data-depth="1.50"><img src="img/logo/V1/layer2.png"></li>
+		<li class="layer" data-depth="1.00"><img src="img/logo/V1/layer3.png"></li>
+		<li class="layer" data-depth="0.50"><img src="img/logo/V1/layer4.png"></li>
+		<li class="layer" data-depth="0.00"><img src="img/logo/V1/layer5.png"></li>
+	</ul>
+	<ul class="grid galleryStyle">
+		<li>
+			<figure>
+				<img src="img/projectPreview/wayw.png" alt="Why Are You Watching">
+				<figcaption>
+					<h3>W A Y W?!</h3>
+					<span>Interactive Installation</span>
+					<a href="whyAreYouWatching.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="img/projectPreview/tronic.png" alt="Tronic">
+				<figcaption>
+					<h3>B.A.D</h3>
+					<span>Interactive Installation</span>
+					<a href="tronic.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="img/projectPreview/vertigo.png" alt="Vertigo">
+				<figcaption>
+					<h3>Vertigo</h3>
+					<span>Interactive Installation</span>
+					<a href="#">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+	</ul>
+	<img src="img/line.png"  width="100%"/>
+	<ul class="grid galleryStyle">
+		<li>
+			<figure>
+				<img src="img/projectPreview/wayw.jpg" alt="img04">
+				<figcaption>
+					<h3>Why A Y W?!</h3>
+					<span>Interactive Installation</span>
+					<a href="whyAreYouWatching.html">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="img/projectPreview/tronic.jpg" alt="img01">
+				<figcaption>
+					<h3>B.A.D</h3>
+					<span>Interactive Installation</span>
+					<a href="#">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="img/projectPreview/vertigo.jpg" alt="img02">
+				<figcaption>
+					<h3>Vertigo</h3>
+					<span>Interactive Installation</span>
+					<a href="#">Take a look</a>
+				</figcaption>
+			</figure>
+		</li>
+	</ul>
+</div>
+	<!-- Scripts -->
+	<script src="js/jquery.parallax.js"></script>
+    <script src="js/PxLoader.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    // <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(window).scroll(function(e){
+		parallax();
+	 $('.photoset').each(function () {
+	        if (($(this).offset().top - $(window).scrollTop()) < 100) {
+	        	$(this).stop().fadeTo(200, 0);
+	        } else {
+	            $(this).stop().fadeTo('fast', 1);
+	        }
+	    });
+	});
+	$('#logo').parallax();
+</script>
+  </body>
+</html>
