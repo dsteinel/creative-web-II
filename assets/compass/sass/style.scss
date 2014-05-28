@@ -39,7 +39,6 @@ a {
 }
 img {
   display: block;
-  width: 100%;
 }
 h3{
   font-family: 'Open Sans', sans-serif;
@@ -85,7 +84,7 @@ h3{
     display: inline-block;
     margin: 0;
     padding: 20px;
-    width: 440px;
+    width: 540px;
     text-align: left;
   }
   figure {
@@ -146,6 +145,9 @@ h3{
 }
 /*********** LOGO ANIMATION ***********/
 .layer {
+  img{
+    width: 100%;
+  }
   &:nth-child(1) {
     opacity: 0.90;
   }
@@ -262,19 +264,19 @@ h3{
 @media screen and (min-width: 1500px) {
   .grid {
     padding: 10px 10px 100px 10px;
-    li {
-      width: 100%;
-      width: 540px;
-    }
+    // li {
+    //   width: 100%;
+    //   width: 540px;
+    // }
   }
 }
 @media screen and (max-width: 549px) {
   .grid {
     padding: 10px 10px 100px 10px;
-    li {
-      min-width: 300px;
-      width: 100%;
-    }
+    // li {
+    //   min-width: 300px;
+    //   width: 100%;
+    // }
   }
   #navigation {
     position: absolute;
@@ -299,10 +301,10 @@ h3{
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .grid {
     padding: 10px 10px 100px 10px;
-    li {
-      min-width: 400px;
-      width: 100%;
-    }
+    // li {
+    //   min-width: 400px;
+    //   width: 100%;
+    // }
   }
   #navigation {
     position: absolute;

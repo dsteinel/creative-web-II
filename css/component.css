@@ -213,10 +213,10 @@ img {
 	.grid {
 		padding: 10px 10px 100px 10px;
 	}
-	.grid li {
+/*	.grid li {
 		width: 100%;
 		width: 540px;
-	}
+	}*/
 }
 
 
@@ -224,9 +224,9 @@ img {
 	.grid {
 		padding: 10px 10px 100px 10px;
 	}
-	.grid li {
+/*	.grid li {
 		width: 100%;
-		min-width: 300px;
+		*/min-width: 300px;
 	}
 	#navigation {
 	    position: absolute;
@@ -256,9 +256,9 @@ and (max-device-width : 480px) {
 	.grid {
 		padding: 10px 10px 100px 10px;
 	}
-	.grid li {
+/*	.grid li {
 		width: 100%;
-		min-width: 400px;
+		*/min-width: 400px;
 	}
 	#navigation {
 	    position: absolute;
