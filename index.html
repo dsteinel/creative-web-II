@@ -24,9 +24,14 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" href="assets/css/style.css">
-
+		<link rel="stylesheet" href="assets/css/mediaQuery.css">
+		<link rel="stylesheet" href="assets/css/queryHack.css">
         <script src="js/jquery-1.10.2.min.js"></script>
       </script>
+      <style>
+		
+
+	</style>
     </head>
     <body>
 <div id="container">
@@ -77,9 +82,9 @@
 	<ul class="grid galleryStyle">
 		<li>
 			<figure>
-				<img src="img/projectPreview/wayw.png" alt="img04">
+				<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/waywS.png 280w, img/projectPreview/waywM.png 600w, img/projectPreview/waywB.png 1200w" alt="Why are You Watching?!">
 				<figcaption>
-					<h3>Why A Y W?!</h3>
+					<h3>W A Y W?!</h3>
 					<span>Interactive Installation</span>
 					<a href="whyAreYouWatching.html">Take a look</a>
 				</figcaption>
@@ -87,17 +92,17 @@
 		</li>
 		<li>
 			<figure>
-				<img src="img/projectPreview/tronic.png" alt="img01">
+				<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronicS.png 280w, img/projectPreview/tronicM.png 600w, img/projectPreview/tronicB.png 1200w" alt="B A D - Tronic">
 				<figcaption>
 					<h3>B.A.D</h3>
 					<span>Interactive Installation</span>
-					<a href="#">Take a look</a>
+					<a href="tronic.html">Take a look</a>
 				</figcaption>
 			</figure>
 		</li>
 		<li>
 			<figure>
-				<img src="img/projectPreview/vertigo.png" alt="img02">
+				<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigoS.png 280w, img/projectPreview/vertigoM.png 600w, img/projectPreview/vertigoB.png 1200w" alt="Vertigo">
 				<figcaption>
 					<h3>Vertigo</h3>
 					<span>Interactive Installation</span>
@@ -107,27 +112,30 @@
 		</li>
 	</ul>
 </div>
-	<!-- Scripts -->
-	<script src="js/jquery.parallax.js"></script>
-    <script src="js/PxLoader.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script>
-	// Picture element HTML5 shiv
-	document.createElement( "picture" );
-	</script>
-	<script src="js/picturefill.js" async></script>
-    <script>
-    $(window).scroll(function(e){
-		parallax();
-	 $('.photoset').each(function () {
-	        if (($(this).offset().top - $(window).scrollTop()) < 100) {
-	        	$(this).stop().fadeTo(200, 0);
-	        } else {
-	            $(this).stop().fadeTo('fast', 1);
-	        }
-	    });
-	});
-	$('#logo').parallax();
+<!-- Scripts -->
+<script src="js/jquery.parallax.js"></script>
+<script src="js/PxLoader.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/onmediaquery.min.js"></script>
+<script src="js/mediaQueryCall.js"></script>
+<script>
+// Picture element HTML5 shiv
+document.createElement( "picture" );
+</script>
+<script src="js/picturefill.js" async></script>
+<script>
+$(window).scroll(function(e){
+	parallax();
+ $('.photoset').each(function () {
+        if (($(this).offset().top - $(window).scrollTop()) < 100) {
+        	$(this).stop().fadeTo(200, 0);
+        } else {
+            $(this).stop().fadeTo('fast', 1);
+        }
+    });
+});
+$('#logo').parallax();
+
 </script>
   </body>
 </html>

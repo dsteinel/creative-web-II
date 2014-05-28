@@ -1,0 +1,72 @@
+/*max-width: 31.5em*/
+@media screen and (min-width: 1500px) {
+  .grid {
+    padding: 10px 10px 100px 10px;
+    // li {
+    //   width: 100%;
+    //   width: 540px;
+    // }
+  }
+}
+@media screen and (max-width: 549px) {
+  .grid {
+    padding: 10px 10px 100px 10px;
+    // li {
+    //   min-width: 300px;
+    //   width: 100%;
+    // }
+  }
+  #navigation {
+    position: absolute;
+    top: 90px;
+    margin: 0 auto;
+    min-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-weight: 10;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    a {
+      display: inline-block;
+      padding: 8px 0px 0px 0px;
+      width: 100px;
+      height: 33px;
+      border-right: 1px solid #5C5C5C;
+    }
+  }
+}
+/*iphone 4*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .grid {
+    padding: 10px 10px 100px 10px;
+    // li {
+    //   min-width: 400px;
+    //   width: 100%;
+    // }
+  }
+  #navigation {
+    position: absolute;
+    top: 90px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-weight: 10;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    a {
+      display: inline-block;
+      padding: 8px 0px 0px 0px;
+      width: 200px;
+      height: 33px;
+      border-right: 1px solid #5C5C5C;
+    }
+  }
+  #language{
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 25em) {
+  .codrops-icon span {
+    display: none;
+  }
+}
