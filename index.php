@@ -24,6 +24,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/onMediaQueryCss.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="js/jquery-1.10.2.min.js"></script>
 </script>
@@ -57,10 +59,65 @@
 					<section>
 						<a href="whyAreYouWatching.php">
 							<figure class="stack stack-previewgrid">
-								<img src="img/projectPreview/wayw/wayw-4.png" alt="img04"/>
-								<img src="img/projectPreview/wayw/wayw-1.png" alt="img01"/>
-								<img src="img/projectPreview/wayw/wayw-2.png" alt="img05"/>
-								<img src="img/projectPreview/wayw/wayw-3.png" alt="img03"/>
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/wayw/wayw-4s.png 280w, 
+								img/projectPreview/wayw/wayw-4m.png 600w, img/projectPreview/wayw/wayw-4.png 1200w" alt="Why are You Watching?!">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/wayw/wayw-1s.png 280w, 
+								img/projectPreview/wayw/wayw-1m.png 600w, img/projectPreview/wayw/wayw-1.png 1200w" alt="Why are You Watching?!">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/wayw/wayw-2s.png 280w, 
+								img/projectPreview/wayw/wayw-2m.png 600w, img/projectPreview/wayw/wayw-2.png 1200w" alt="Why are You Watching?!">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/wayw/wayw-3s.png 280w, 
+								img/projectPreview/wayw/wayw-3m.png 600w, img/projectPreview/wayw/wayw-3.png 1200w" alt="Why are You Watching?!">
+							</figure>
+							<figcaption class="wayw-cap">Why Are You Watching?!</figcaption>
+						</a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<a href="tronic.php">
+							<figure class="stack stack-previewgrid">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-4s.png 280w, 
+								img/projectPreview/tronic/tronic-4m.png 600w, img/projectPreview/tronic/tronic-4.png 1200w" alt="Tronic - B.A.D">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-1s.png 280w, 
+								img/projectPreview/tronic/tronic-1m.png 600w, img/projectPreview/tronic/tronic-1.png 1200w" alt="Tronic - B.A.D">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-2s.png 280w, 
+								img/projectPreview/tronic/tronic-2m.png 600w, img/projectPreview/tronic/tronic-2.png 1200w" alt="Tronic - B.A.D">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-3s.png 280w, 
+								img/projectPreview/tronic/tronic-3m.png 600w, img/projectPreview/tronic/tronic-3.png 1200w" alt="Tronic - B.A.D">
+							</figure>
+							<figcaption class="tronic-cap">Tronic - B.A.D</figcaption>
+						</a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<a href="vertigo.php">
+							<figure class="stack stack-previewgrid">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-4s.png 280w, 
+								img/projectPreview/vertigo/vertigo-4m.png 600w, img/projectPreview/vertigo/vertigo-4.png 1200w" alt="Vertigo">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-1s.png 280w, 
+								img/projectPreview/vertigo/vertigo-1m.png 600w, img/projectPreview/vertigo/vertigo-1.png 1200w" alt="Vertigo">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-2s.png 280w, 
+								img/projectPreview/vertigo/vertigo-2m.png 600w, img/projectPreview/vertigo/vertigo-2.png 1200w" alt="Vertigo">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-3s.png 280w, 
+								img/projectPreview/vertigo/vertigo-3m.png 600w, img/projectPreview/vertigo/vertigo-3.png 1200w" alt="Vertigo">
+							</figure>
+							<figcaption class="vertigo-cap">Vertigo</figcaption>
+						</a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<a href="#">
+							<figure class="stack stack-previewgrid">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/fotos/1s.png 280w, 
+								img/projectPreview/fotos/1m.png 600w, img/projectPreview/fotos/1.png 1200w" alt="fotos">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="iimg/projectPreview/fotos/2s.png 280w, 
+								img/projectPreview/fotos/2m.png 600w, img/projectPreview/fotos/2.png 1200w" alt="fotos">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/fotos/6s.png 280w, 
+								img/projectPreview/fotos/6m.png 600w, img/projectPreview/fotos/6.png 1200w" alt="fotos">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/fotos/4s.png 280w, 
+								img/projectPreview/fotos/4m.png 600w, img/projectPreview/fotos/4.png 1200w" alt="fotos">
 							</figure>
 						</a>
 					</section>
@@ -69,10 +126,14 @@
 					<section>
 						<a href="tronic.php">
 							<figure class="stack stack-previewgrid">
-								<img src="img/projectPreview/tronic/tronic-4.png" alt="img04"/>
-								<img src="img/projectPreview/tronic/tronic-1.png" alt="img01"/>
-								<img src="img/projectPreview/tronic/tronic-2.png" alt="img05"/>
-								<img src="img/projectPreview/tronic/tronic-3.png" alt="img03"/>
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-4s.png 280w, 
+								img/projectPreview/tronic/tronic-4m.png 600w, img/projectPreview/tronic/tronic-4.png 1200w" alt="Tronic - B.A.D">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-1s.png 280w, 
+								img/projectPreview/tronic/tronic-1m.png 600w, img/projectPreview/tronic/tronic-1.png 1200w" alt="Tronic - B.A.D">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-2s.png 280w, 
+								img/projectPreview/tronic/tronic-2m.png 600w, img/projectPreview/tronic/tronic-2.png 1200w" alt="Tronic - B.A.D">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/tronic/tronic-3s.png 280w, 
+								img/projectPreview/tronic/tronic-3m.png 600w, img/projectPreview/tronic/tronic-3.png 1200w" alt="Tronic - B.A.D">
 							</figure>
 						</a>
 					</section>
@@ -81,46 +142,17 @@
 					<section>
 						<a href="vertigo.php">
 							<figure class="stack stack-previewgrid">
-								<img src="img/projectPreview/vertigo/vertigo-4.png" alt="img04"/>
-								<img src="img/projectPreview/vertigo/vertigo-1.png" alt="img01"/>
-								<img src="img/projectPreview/vertigo/vertigo-2.png" alt="img05"/>
-								<img src="img/projectPreview/vertigo/vertigo-3.png" alt="img03"/>
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-4s.png 280w, 
+								img/projectPreview/vertigo/vertigo-4m.png 600w, img/projectPreview/vertigo/vertigo-4.png 1200w" alt="Vertigo">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-1s.png 280w, 
+								img/projectPreview/vertigo/vertigo-1m.png 600w, img/projectPreview/vertigo/vertigo-1.png 1200w" alt="Vertigo">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-2s.png 280w, 
+								img/projectPreview/vertigo/vertigo-2m.png 600w, img/projectPreview/vertigo/vertigo-2.png 1200w" alt="Vertigo">
+								<img sizes="100vw, (min-width: 40em) 80vw" srcset="img/projectPreview/vertigo/vertigo-3s.png 280w, 
+								img/projectPreview/vertigo/vertigo-3m.png 600w, img/projectPreview/vertigo/vertigo-3.png 1200w" alt="Vertigo">
 							</figure>
 						</a>
 					</section>
-				</li>
-			</ul>
-			<img src="img/line.png"  width="100%" style="display: none;" />
-			<ul class="grid galleryStyle">
-				<li>
-					<figure>
-						<img src="img/projectPreview/wayw.png" alt="img04">
-						<figcaption>
-							<h3>Why A Y W?!</h3>
-							<span>Interactive Installation</span>
-							<a href="whyAreYouWatching.html">Take a look</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/projectPreview/tronic.png" alt="img01">
-						<figcaption>
-							<h3>B.A.D</h3>
-							<span>Interactive Installation</span>
-							<a href="#">Take a look</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/projectPreview/vertigo.png" alt="img02">
-						<figcaption>
-							<h3>Vertigo</h3>
-							<span>Interactive Installation</span>
-							<a href="#">Take a look</a>
-						</figcaption>
-					</figure>
 				</li>
 			</ul>
 		</div>
@@ -129,20 +161,21 @@
 	<script src="js/jquery.parallax.js"></script>
 	<script src="js/PxLoader.js"></script>
 	<script src="js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="js/raphael-min.js" ></script>
-	<script type="text/javascript" src="js/randomColor.js" ></script>
-	<script type="text/javascript" src="js/galleryStyle/classie.js" ></script>
-	<script type="text/javascript" src="js/galleryStyle/main.js" ></script>
-
+	<!-- <script src="js/raphael-min.js" ></script> -->
+	<script src="js/randomColor.js" ></script>
+	<script src="js/galleryStyle/classie.js" ></script>
+	<script src="js/galleryStyle/main.js" ></script>
+	<script src="js/onmediaquery.min.js"></script>
+	<script>
+	// Picture element HTML5 shiv
+	document.createElement( "picture" );
+	</script>
+	<script src="js/picturefill.js" async></script>
 	<script>
 	$("#meImageStart").click(function(){
 		$(this).slideUp();
 		$(".startTitle").slideUp();
-		// $("#navigation").slideUp( 300 ).delay( 800 ).fadeIn( 400 );
-		// $("#logo").slideUp( 300 ).delay( 800 ).fadeIn( 400 );
-		// $(".spacer").slideUp( 300 ).delay( 800 ).fadeIn( 400 );
 		$(".grid li").delay( 200 ).css("display", "inline-block");
-		$("#contactButton").show();
 	});
 	$(window).scroll(function(e){
 		$('.photoset').each(function () {
@@ -156,6 +189,13 @@
 	$('#logo').parallax();
 	$( document ).ready(function() {
 		var myRandomColor = randomColor();
+		$(".projectTitle figcaption").css("visibility", "visible");
+		// $(".stack").mouseover(function() {
+		// 	$(".grid figcaption").css("visibility", "visible");
+		// }).mouseout(function() {
+		// 	$(".grid figcaption").css("visibility", "hidden");
+		// });
+
 		$(".spacer").css("background-color", myRandomColor);
 		$(".spacer").css("opacity", 0.1);
 		$("div#navigation a").mouseover(function() {
@@ -169,6 +209,39 @@
 		// $(".grid figcaption").css("background-color", myRandomColor)
 		// $(".grid figcaption").css("opacity", 0.4);
 	});
+
+	var queries = [
+	{
+		context: 'mobile',
+		match: function() {
+			console.log('Mobile callback. Maybe hook up some tel: numbers?');
+            // Your mobile specific logic can go here. 
+        },
+        unmatch: function() {
+            // We're leaving mobile.    
+        }
+    },
+    {
+    	context: 'skinny',
+    	match: function() {
+    		console.log('skinny callback! Swap the class on the body element.');
+            // Your tablet specific logic can go here.
+        },
+        unmatch: function() {
+        	console.log('leaving skinny context!');
+        }
+
+    },
+    {
+    	context: 'wide-screen',
+    	match: function() {
+    		console.log('wide-screen callback woohoo! Load some heavy desktop JS badddness.');
+            // your desktop specific logic can go here.
+        }
+    }
+    ];
+// Go!
+MQ.init(queries);
 
 // var rsr = Raphael('rsr', '1024', '768'); 
 // var path_a = rsr.path("M440.362,303.105c0,0,113.487-17.47,180.988,56.274 c-31.545,58.763-57.828,102.768-138.126,129.37C443.166,429.751,421.275,368.585,440.362,303.105z"); 
@@ -198,6 +271,15 @@
 
 // group_b.transform("S0.5, 0.5, 0, 0");
 
+</script>
+<script>
+var my_query = MQ.addQuery({
+    context: ['skinny','desktop'],
+    call_for_each_context: false, 
+    match: function() { 
+        console.log( 'second skinny callback!' )
+    }
+});
 </script>
 </body>
 </html>

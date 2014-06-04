@@ -28,9 +28,8 @@ body, html {
   color: #1A1A1A;
   //background-image: url(http://subtlepatterns.com/patterns/ricepaper.png);
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Serif Pro', sans-serif;
   list-style-type: none;
-
 }
 a {
   color: #888;
@@ -44,9 +43,14 @@ img {
   width: 100%;
 }
 h3{
-  font-family: 'Open Sans', sans-serif;
   font-size: 160%;
   color: #3f3f3f;
+}
+figcaption{
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
 }
 /* ---------------------------------------------------- NAVIGATION ------------------ */
 #navigation {
@@ -60,7 +64,6 @@ h3{
   text-align: center;
   font-weight: 400;
   font-size: 11px;
-  font-family: 'Open Sans', sans-serif;
   a {
     display: inline-block;
     padding: 4px 0px 0px 0px;
@@ -78,11 +81,11 @@ h3{
 }
 /********* RESPONSIVE GRID **********/
 #imageGalleryWrapper{
-  margin-top: -220px;
+  margin-top: -260px;
 }
 .grid {
   margin: 0 auto;
-  padding: 250px 20px 20px 80px;
+  padding: 190px 20px 120px 80px;
   margin-left: -80px;
   text-align: center;
   li {
@@ -90,7 +93,7 @@ h3{
     // display: inline-block;
     display: none;
     margin: 0;
-    padding: 20px 20px 20px 80px;
+    padding: 20px 20px 120px 80px;
     width: 440px;
     text-align: left;
   }
@@ -113,6 +116,7 @@ h3{
   -moz-border-radius: 150px;
   background: url(/newSite/img/me/me_loeten.jpg) no-repeat;
   margin: 0 auto;
+  margin-top: 100px;
 }
 #textPassageStart{
   width: 100%;
@@ -399,7 +403,6 @@ transform: scale(0);
     text-align: center;
     font-weight: 10;
     font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
     a {
       display: inline-block;
       padding: 8px 0px 0px 0px;
@@ -456,7 +459,6 @@ transform: scale(0);
     text-align: center;
     font-weight: 10;
     font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
     a {
       display: inline-block;
       padding: 8px 0px 0px 0px;

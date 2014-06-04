@@ -1,1 +1,0 @@
-This is my creative web II repository.
