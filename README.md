@@ -1,6 +1,6 @@
 Creative Web II
 ===================
 
-#included:
-	- pictureFill
-	- onMediaQuery
+included:
+ - pictureFill
+ - onMediaQuery
