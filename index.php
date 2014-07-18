@@ -162,22 +162,15 @@
 		randomColor();
 
 		
-		$(".stack").mouseover(function(){
-			$(this).addClass("active");
+		$(".grid li").mouseover(function(){
+			$(this).find(".stack").addClass("active");
 		});
-		$(".stack").mouseout(function(){
-			$(this).removeClass("active");
-		});
-		$(".projectCaption").mouseover(function(){
-			$(this).prev().addClass("active");
-		});
-		$(".projectCaption").mouseout(function(){
-			$(this).prev().removeClass("active");
+		$(".grid li").mouseout(function(){
+			$(this).find(".stack").removeClass("active");
 		});
 
-		$(".projectTitle figcaption").css("visibility", "visible");
+		//$(".projectTitle figcaption").css("visibility", "visible");
 		$(".spacer").css("background-color", randomColor());
-		$("")
 		
 		$(".grid li, #navigation a").mouseover(function() {
 			$(this).css("background-color", randomColor());

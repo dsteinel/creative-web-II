@@ -314,25 +314,6 @@ figcaption{
 }
 
 
-/*********** LOGO ANIMATION ***********/
-.layer {
-  &:nth-child(1) {
-    opacity: 0.90;
-  }
-  &:nth-child(2) {
-    opacity: 0.70;
-  }
-  &:nth-child(3) {
-    opacity: 0.60;
-  }
-  &:nth-child(4) {
-    opacity: 0.50;
-  }
-  &:nth-child(5) {
-    opacity: 0.40;
-  }
-}
-
 /* PROJECT SITE */
 .projectTitle{
   video{
