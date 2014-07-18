@@ -26,11 +26,11 @@ body, html {
   padding: 0;
   background-color: #f6f6f6;
   color: #1A1A1A;
-  //background-image: url(http://subtlepatterns.com/patterns/ricepaper.png);
-  font-size: 100%;
-  font-family: 'Source Serif Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
   list-style-type: none;
-  overflow: hidden;
+  // overflow: hidden;
 }
 a {
   color: #888;
@@ -48,18 +48,13 @@ h3{
   color: #3f3f3f;
 }
 figure{
-  z-index: 100;
 }
 
 figcaption{
-  position: absolute; 
-  color: #888; 
-  padding: 10px 20px; 
-  margin: -34px;
-  margin-top: 2px;
-  z-index: 1;
-  font-weight: 400;
-  font-size: 14px;
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  color: white;
 }
 
 /* ---------------------------------------------------- NAVIGATION ------------------ */
@@ -80,9 +75,6 @@ figcaption{
     height: 20px;
     margin-top: 120px;
     border-right: 1px solid #5C5C5C;
-    &:hover {
-      background-color: rgba(167, 213, 24, 0.9);
-    }
     &.first {
       border-left: 1px solid #5C5C5C;
     }
@@ -94,20 +86,57 @@ figcaption{
   margin: 0 auto;
 }
 
+#welcomeText{
+  color: #333;
+  margin-top: 40px;
+  padding: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.recentProject{
+  text-align: center;
+  margin-top: -24px;
+  padding: 0;
+  li {
+    position: relative;
+    margin: 0;
+    max-width: 856px;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    -webkit-padding-start: 0;
+  }
+}
+
 .grid {
-  padding: 80px 20px 120px 0;
-  margin-left: -80px;
-  top: 2000px;
+  padding: 0px 20px 120px 20px;
   text-align: center;
   li {
     position: relative;
-    display: inline-block;
-    // display: none;
     margin: 0;
-    padding: 20px 20px 120px 80px;
+    padding: 20px 50px 130px 50px;
     width: 440px;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    section{
+      figcaption{
+        visibility: hidden;
+        margin-top: 40px;
+        margin-left: -40px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
   }
+}
+.fadeOutImages{
+  -webkit-filter: opacity(.5);
+  opacity: 0.55;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 .spacer {
   position: fixed;
@@ -119,15 +148,59 @@ figcaption{
 }
 /* ---------------------------------------------------- FUNSTUFF ------------------ */
 
-#meImageStart{
+#topImageWrapper{
+  overflow: hidden;
+  position: relative;
+  // max-height: 35em;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+}
+
+#topImageProject img{
+  height: auto;
+  width: 25%;
+  min-width: 6em;
+  min-height: 6em;
+  display: inline-block;
+}
+
+#groupProjectImage{
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 174px;
+}
+
+#groupProjectMiddleImage{
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 6px;
+}
+
+#middleImageProject img{
+  height: auto;
+  width: 25%;
+  min-width: 6em;
+  min-height: 6em;
+  display: inline-block;
+}
+
+#projectDescription{
+  margin-top: 1em;
+}
+
+#meImage{
   width: 600px;
-  height: 230px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  background: url(/newSite/img/me/me_loeten.jpg) no-repeat;
-  margin: 0 auto;
-  margin-top: 160px;
+  height: 400px;
+  // border-radius: 150px;
+  // -webkit-border-radius: 150px;
+  // -moz-border-radius: 150px;
+  background: url(/newSite/img/me/flammbolerro.jpg) no-repeat;
+  margin: auto;
+  margin-top: 220px;
+  margin-bottom: 52px;
 }
 #textPassageStart{
   width: 100%;
@@ -142,14 +215,18 @@ figcaption{
   top: 400px;
 }
 
-
 .logo {
-  position: fixed;
-  z-index: 999;
-  margin-left: 48%;
-  padding: 0;
-  max-width: 60px;
-  max-height: 10px;
+  // padding: 0px 20px 120px 20px;
+  text-align: center;
+  li {
+    position: relative;
+    margin: 0;
+    // padding: 20px 50px 130px 50px;
+    width: 100px;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+  }
 }
 #myText {
   position: relative;
@@ -161,9 +238,7 @@ figcaption{
 
 
 /********GALLERY STUFF | http://tympanus.net/codrops/2014/03/05/simple-stack-effects/ **********/
-.galleryStyle{
-  margin-top: 800px;
-}
+
 .stack {
   margin: 20px auto;
   width: 400px;
@@ -171,6 +246,7 @@ figcaption{
   position: relative;
   max-width: 100%;
   transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 .stack img {
@@ -183,6 +259,7 @@ figcaption{
   outline: 1px solid transparent;
 }
 
+
 .stack img:last-child {
   position: relative;
 }
@@ -192,31 +269,33 @@ figcaption{
 .stack-previewgrid img:first-child,
 .stack-previewgrid img:nth-child(2),
 .stack-previewgrid img:nth-child(3) { /* you'd use smaller images here and not define the width like this */
-width: 24.5%;
-top: auto;
-left: auto;
-bottom: 0;
--webkit-transform: scale(0);
-transform: scale(0);
+  width: 30%;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .stack-previewgrid img:first-child {
-  right: 12.5%;
+  right: 0%;
 }
 
 .stack-previewgrid img:nth-child(2) {
-  left: 37.75%;
+  left: 35%;
 }
 
 .stack-previewgrid img:nth-child(3) {
-  left: 12.5%;
+  left: 0%;
 }
 
 .stack-previewgrid.active img:first-child,
 .stack-previewgrid.active img:nth-child(2),
-.stack-previewgrid.active img:nth-child(3) {
-  -webkit-transform: scale(1);
-  transform: scale(1);
+.stack-previewgrid.active img:nth-child(3), {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transform: translate(0px, 90px);
+  -webkit-transform: translate(0px, 90px);
 }
 
 .stack-previewgrid img:nth-child(4) {
@@ -225,10 +304,9 @@ transform: scale(0);
 }
 
 .stack-previewgrid.active img:nth-child(4) {
-  -webkit-transform: scale(0.75);
-  transform: scale(0.75);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
-
 
 
 /*********** LOGO ANIMATION ***********/
@@ -365,6 +443,12 @@ transform: scale(0);
     -moz-border-radius: 150px;
     background: url(/newSite/img/me/me_loetenS.jpg) no-repeat;
     margin: 0 auto;
+    figcaption{
+      width: 20%;
+      min-width: 150px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
   .projectTitle{
     figcaption{

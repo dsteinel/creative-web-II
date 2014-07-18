@@ -4,114 +4,64 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    
-    <head>
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Dimitri Steinel</title>
-        <meta name="description" content="Dimitri Steinel, Berlin based interaction artist  " />
-        <meta name="keywords" content="Interaction Design, Interactive, Installation, web design" />
-        <meta name="author" content="Dimitri Steinel" />
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <meta name="viewport" content="width=1400">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta property="ga:property_id" content="UA-39461765-1"/>
-        <meta property="og:title" content="Dimitri Steinel | Interaction Design" />
-        <meta property="og:site_name" content="Dimitri Steinel" />
-        <meta property="og:description" content="This is my website - enjoy it!" />
-        <meta property="og:url" content="http://dsteinel.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_us" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        
-        <link href="//fonts.googleapis.com/css?family=Archivo+Narrow:400italic,400,700italic,700" rel="stylesheet" type="text/css">
-
-
-<!--         <link rel="stylesheet" href="css/bootstrap.css"> -->
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/style.css">
-        
-        <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<!--
-        <script type="text/javascript">
-          if(navigator.userAgent.match(/iPhone/i)) {
-            window.location = "http://thekingsofsummermovie.com/m";
-          }
--->
-        </script>
-
-        
-        
-    </head>
-    <body>
-
-<div id="container">
-	
-	<?php include("navigation.php"); ?>
-	
-	<ul id="scene" class="scene">
-		<li class="layer" data-depth="2.00"><img src="img/rectangle/layer1.png"></li>
-		<li class="layer" data-depth="1.50"><img src="img/rectangle/layer2.png"></li>
-		<li class="layer" data-depth="1.00"><img src="img/rectangle/layer3.png"></li>
-		<li class="layer" data-depth="0.50"><img src="img/rectangle/layer4.png"></li>
-		<li class="layer" data-depth="0.00"><img src="img/rectangle/layer5.png"></li>
-		<li class="layer" data-depth="-0.50"><img src="img/rectangle/layer6.png"></li>
+<head>
+	<?php include("head.php"); ?>
+</head>
+<body>
+</head>
+<body>
+	<div id="container">
+		<?php include("navigation.php"); ?>
+		<div class="spacer"></div>
+		<ul id="logo" class="logo">
+			<li class="layer" data-depth="2.00"><img src="img/logo/V1/layer1.png"></li>
+			<li class="layer" data-depth="1.50"><img src="img/logo/V1/layer2.png"></li>
+			<li class="layer" data-depth="1.00"><img src="img/logo/V1/layer3.png"></li>
+			<li class="layer" data-depth="0.50"><img src="img/logo/V1/layer4.png"></li>
+			<li class="layer" data-depth="0.00"><img src="img/logo/V1/layer5.png"></li>
+		</ul>
+		<ul id="language">
+			<li>de</li>
+			<li>//</li>
+			<li>en</li>
+		</ul>
+		<div id="topImageWrapper">
+			<div id="topImageProject">
+				<div id="meImage"></div>
+			</div>
+		</div>
+		<ul class="grid projectTitle" id="projectDescription">
+			<h3>Dimitri Steinel</h3> 
+			
+			<div class="textSet deutschText">
+				<p> 
+					...is a Berlin based interaction designer. Likes to do some fancy arduion stuff.
+				</p>
+			</div>
 	</ul>
-	
-	<div id="fish" class="fish"><img src="img/fish-upside.png"></div>
-	
-
 </div>
-
-
-	
-	<div id="bigImage">
-		<img class="bigImage" src="img/me/me.png" />
-	</div>
-		<p id="myText">
-		Ich bin Dimitri Steinel.
-Ich studiere Interaction-Design an der Berliner Technischen Kunsthochschule im 5. Semester. Meine Projekte zeichnen sich oftmals dadurch aus, dass sie ein sehr genau durchdachtes und auf den Nutzer zugeschnittenes Konzept besitzen. Durch meine Freelancetätigkeiten habe ich das professionelle Arbeiten, vorallem mit Fireworks und Photoshop, erlernt. Allgemein habe ich sehr gute Programmkenntnisse in der Adobe Creative Suite (Fireworks, Illustrator, InDesign, Photoshop, AfterEffects, Premiere Pro). Durch meine 1 jährige Fotoassistenz bei Ralph Geiling habe ich sehr gute Kenntnisse im Umgang mit digitaler Fotografie, Bearbeitung und Lichttechnik. 
-
-Außerdem behersche ich folgende Programmiersprachen: VVVV, Html, CSS, Javascript/jQuery, Processing, Arduino, Isadora und PHP. 
-	</p>
 	<!-- Scripts -->
 	<script src="js/jquery.parallax.js"></script>
-        <script src="js/PxLoader.js"></script>
-        <script src="js/modernizr.js"></script>
-        	<!-- Scripts -->
-	<script src="js/jquery.parallax.js"></script>
-        <script src="js/PxLoader.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script>
-        $(window).scroll(function(e){
-			parallax();
-		    
-			if ($(this).scrollTop() > 100) {
-		        console.log('there');
-		        $( "#bigImage" ).fadeTo(200, 0.5);
-		    }
-		    if ($(this).scrollTop() < 100) {
-		        console.log('there');
-		        $( "#bigImage" ).fadeIn();
-		    }
-		
-		
+    <script src="js/modernizr.custom.js"></script>
+    <script>
+		$('#logo').parallax();
+		$( document ).ready(function() {
+			var myRandomColor = 'rgba(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',.65)';
+			$(".projectTitle figcaption").css("visibility", "visible");
+			$('.grid li').hover(function(){
+				$(this).siblings().addClass('fadeOutImages');
+			}, function(){
+				$(this).siblings().removeClass('fadeOutImages');
+			});
+
+			$(".spacer").css("background-color", myRandomColor);
+
+			$(".grid li, #navigation a").mouseover(function() {
+				$(this).css("background-color",myRandomColor);
+			}).mouseout(function() {
+				$(this).css("background-color","#f6f6f6");
+			});
 		});
-		
-		function parallax(){
-		  var scrolled = $(window).scrollTop();
-		}
-	// Yep, that's it!
-	$('#scene').parallax();
-
 	</script>
-
-
-   <!-- MAIN FRAMEWORK -->
-    <script data-main="scripts/preloader" src="scripts/libs/vendor/requirejs/require.js"></script>
-    <!-- END MAIN FRAMEWORK -->
-
-  </body>
+</body>
 </html>

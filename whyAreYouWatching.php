@@ -3,30 +3,10 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Dimitri Steinel</title>
-        <meta name="description" content="Dimitri Steinel, Berlin based interaction artist  " />
-        <meta name="keywords" content="Interaction Design, Interactive, Installation, web design" />
-        <meta name="author" content="Dimitri Steinel" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=1400">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta property="ga:property_id" content="UA-39461765-1"/>
-        <meta property="og:title" content="Dimitri Steinel | Interaction Design" />
-        <meta property="og:site_name" content="Dimitri Steinel" />
-        <meta property="og:description" content="This is my website - enjoy it!" />
-        <meta property="og:url" content="http://dsteinel.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_us" />
-        <link rel="shortcut icon" href="img/logo/favicon/favicon.png" />
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <script src="js/jquery-1.10.2.min.js"></script>
-      </script>
-    </head>
+<head>
+    <?php include("head.php"); ?>
+</head>
+<body>
     <body>
 <div id="container">
 	<?php include("navigation.php"); ?>
@@ -43,13 +23,18 @@
 		<li>//</li>
 		<li>en</li>
 	</ul>
-	<ul class="grid projectTitle">
+	<div id="topImageWrapper">
+		<div id="topImageProject">
+			<div id="groupProjectImage">
+				<img src="img/project/wayw/wayw-topImg-1.png">
+				<img src="img/project/wayw/wayw-topImg-2.png">
+				<img src="img/project/wayw/wayw-topImg-3.png">
+			</div>
+		</div>
+	</div>
+	<ul class="grid projectTitle" id="projectDescription">
 		<h3>Why are you watching</h3> 
-		<video class="video" controls>
-			<!-- MP4 must be first for iPad! -->
-			<source src="video/wayw/wayw.appleuniversal.mp4" type="video/mp4" />
-			<source src="video/wayw/wayw_wondershare.webm" type="video/webm" />
-		</video>
+		
 		<div class="textSet deutschText">
 			<p> 
 				Soll dem Besucher die Sinnlosigkeit des Gaffens vor Augen f&uuml;hren. Die meisten Menschen tun es und denken nicht weiter dar&uuml;ber nach. Warum schauen Menschen Promi-Sendungen, warum kaufen sie sich Promi-Zeitschriften und warum ist die t&auml;gliche Zeitung voll von Schaulustigen-News? WhyAreYou_Watching?! soll das Interesse des Besuchers wecken und ihm anders, als die hei&szlig;geliebten Promis, alles offenlegen wo nichts zu sehen ist. Keine Mauern die umgangen werden m&uuml;ssen, keine heimlichen Fotos die geschossen werden und keine Tuscheleien &uuml;ber Sachen von denen man geh&ouml;rt hat das sie passiert sind. Hier wird einem der Blick ins Nichts offengelegt. Egal wie sich der Besucher bewegt, WhyAreYou_Watching?! zeigt ihm genau das, was die Promis versuchen zu verstecken, das intime Innenleben. Was der Betrachter sieht ist inhaltlich das Selbe, was er auch bei seinen Promimagazinen sieht: Nichts. 
@@ -81,13 +66,21 @@
 				Fall walk run - What is love
 			</p>
 		</div>
+		<div>
+			<p>
+
+			</p>
+		</div>
+		<video class="video" controls>
+			<!-- MP4 must be first for iPad! -->
+			<source src="video/wayw/wayw.appleuniversal.mp4" type="video/mp4" />
+			<source src="video/wayw/wayw_wondershare.webm" type="video/webm" />
+		</video>
 	</ul>
 </div>
 	<!-- Scripts -->
 	<script src="js/jquery.parallax.js"></script>
-    <script src="js/PxLoader.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="js/raphael-min.js" ></script>
 	<script type="text/javascript" src="js/randomColor.js" ></script>
     <script>
     $("#language li").click(function(){
@@ -104,21 +97,36 @@
 	    });
 	});
 	$('#logo').parallax();
-
 	$( document ).ready(function() {
-		var myRandomColor = randomColor();
+		$(".galleryStyle").delay(1000).animate({
+		  		marginTop: "-=800"
+		  	}, 500, function(){
+		  		$(this).animate({ marginTop: "40px" }, 100 );
+		  		$(this).animate({ marginTop: "-=40px" }, 100 );
+		  		$(this).animate({ marginTop: "10px" }, 100 );
+		  		$(this).animate({ marginTop: "-=10px" }, 100 );
+		  		$("html").css("overflow", "auto");
+		  });
+		var myRandomColor = 'rgba(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',.65)';
+		$(".projectTitle figcaption").css("visibility", "visible");
+		$('.grid li').hover(function(){
+            $(this).siblings().addClass('fadeOutImages');
+        }, function(){
+            $(this).siblings().removeClass('fadeOutImages');
+        });
+
 		$(".spacer").css("background-color", myRandomColor);
-		$(".spacer").css("opacity", 0.1);
-		$("div#navigation a").mouseover(function() {
+
+		$(".grid li, #navigation a").mouseover(function() {
 			$(this).css("background-color",myRandomColor);
-			$(this).css("opacity", 0.1);
+			$(this).find("figcaption").css("visibility", "visible").animate({ marginTop: "40px"}, 200 );
+			$(".grid li").not(this).fadeOut('slow', .5);
 
 		}).mouseout(function() {
 			$(this).css("background-color","#f6f6f6");
-			$(this).css("opacity", 1);
+			$(this).find("figcaption").css("visibility", "hidden").animate({ marginTop: "40px"}, 50 );
 		});
-		$(".grid figcaption").css("background-color", myRandomColor);
-		$(".grid figcaption").css("opacity", 0.9);
+		$("#meImageStart").css("marginTop", "500px");
 	});
 </script>
   </body>

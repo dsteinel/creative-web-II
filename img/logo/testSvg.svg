@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
+	height="100px" viewBox="0 0 50 100" enable-background="new 0 0 50 100" xml:space="preserve">
+	<view id="redIcon" viewBox="0 0 50 100"/>
+	<view id="blueIcon" viewBox="0 50 50 100"/>
+	<g>
+		<rect fill="#DB0707" width="50" height="50"/>
+	</g>
+	<g>
+		<rect y="50" fill="#0B28D6" width="50" height="50"/>
+	</g>
+</svg>

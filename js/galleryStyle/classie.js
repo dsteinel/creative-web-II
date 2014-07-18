@@ -33,11 +33,10 @@ if ( 'classList' in document.documentElement ) {
   };
   addClass = function( elem, c ) {
     elem.classList.add( c );
-    elem.classList.add("wayw-cap");
+
   };
   removeClass = function( elem, c ) {
     elem.classList.remove( c );
-    elem.classList.add("showCap");
   };
 }
 else {
